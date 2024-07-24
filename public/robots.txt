@@ -1,0 +1,7 @@
+User-Agent: *
+User-Agent: Googlebot
+User-Agent: Googlebot-Mobile
+Crawl-delay: 0.1
+
+Allow: /*
+Sitemap: https://www.acmaintenance.id/sitemap.xml

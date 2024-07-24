@@ -1,0 +1,56 @@
+@media only screen and (max-width: 1399.98px) and (orientation: portrait) {}
+
+@media only screen and (max-width: 1399.98px) {}
+
+@media only screen and (max-width: 991.98px) {}
+
+@media only screen and (max-width: 767.98px) {}
+
+@media only screen and (max-width: 575.98px) {
+    .hero {
+        background-position: right;
+    }
+
+    .hero h1 {
+        font-size: 18px;
+        font-style: normal;
+        margin-bottom: 25px;
+    }
+
+    .bg-hero {
+        width: 200%;
+    }
+
+    .why-us {
+        margin: 40px 0;
+    }
+
+    .info-container {
+        position: relative;
+    }
+
+    h2 {
+        font-size: 25px !important;
+    }
+
+    .services {
+
+        padding: 50px 20px;
+    }
+
+    .card-package {
+        padding: 20px;
+    }
+
+    .card-package h4 {
+
+        font-size: 20px;
+        line-height: 150%;
+    }
+
+    .card-package h3 {
+        font-size: 40px;
+    }
+
+
+}

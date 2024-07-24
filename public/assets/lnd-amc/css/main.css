@@ -1,0 +1,579 @@
+/* General styles */
+:root {
+    --primary-blue: #005da9;
+    --secondary-blue: #258bc3;
+    --blue: #289dbe;
+    --black: #282828;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    overflow-x: hidden;
+    color: var(--black) !important;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Poppins", sans-serif;
+}
+
+a,
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: var(--secondary-blue);
+}
+
+/* Navbar styles */
+.navbar .nav-link {
+    padding: 20px 10px !important;
+    margin: 0 10px !important;
+    color: var(--secondary-blue) !important;
+}
+
+.navbar .nav-link.active,
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+    color: var(--primary-blue) !important;
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -ms-transition: none;
+    -o-transition: none;
+}
+
+/* Button styles */
+.btn {
+    color: var(--primary-blue);
+    border-radius: 50px;
+}
+
+.btn-main {
+    background-color: var(--primary-blue);
+    color: white;
+}
+
+.btn-main:hover {
+    background-color: white;
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+}
+
+.btn-light-blue {
+    background-color: var(--blue);
+    color: white;
+}
+
+.btn-light-blue:hover {
+    background-color: transparent;
+    border-color: var(--blue);
+    color: var(--blue);
+}
+
+/* Hero section */
+.hero {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.bg-hero {
+    width: 80%;
+    height: 100%;
+    background-color: rgba(19, 57, 81, 0.9);
+    clip-path: polygon(0 0, 100% 0, 78.46% 100%, 0 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.hero h1 {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 25px;
+}
+
+/* Section styles */
+section {
+    overflow-x: hidden;
+}
+
+/* Order form styles */
+#order label {
+    color: white;
+}
+
+#order .form-control {
+    border-color: white !important;
+}
+
+.order-container {
+    border-radius: 20px;
+    background-color: var(--secondary-blue);
+    width: 90%;
+}
+
+/* Why us section */
+.why-us {
+    margin: 100px 0;
+}
+
+.why-us h2 {
+    color: var(--primary-blue, #005da9);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.why-us h3 {
+    color: var(--blue, #289dbe);
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.why-us p {
+    color: var(--black, #282828);
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Technician section */
+.technician {
+    background: #eaf6f9;
+    padding-top: 50px;
+}
+
+.technician h2,
+.technician .counter h3 {
+    color: var(--dark-blue-2, #005da9);
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.technician p {
+    color: var(--main-black, #425466);
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.technician .counter p {
+    color: var(--dark-blue-2, #005da9);
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+/* Scan QR section */
+.scanqr {
+    padding: 50px 0;
+}
+
+.scanqr h2 {
+    color: var(--dark-blue-2, #005da9);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    margin-bottom: 40px;
+}
+
+/* Warranty section */
+.warranty {
+    padding: 80px 0;
+}
+
+.warranty h2 {
+    color: var(--dark-blue-2, #005da9);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.warranty p {
+    color: var(--main-black, #425466);
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+/* Services section */
+.services {
+    background: linear-gradient(0deg, #eaf6f9 0%, #eaf6f9 100%),
+        linear-gradient(
+            180deg,
+            rgba(40, 157, 190, 0) 0%,
+            rgba(40, 157, 190, 0.27) 75.5%,
+            rgba(40, 157, 190, 0) 100%
+        );
+    padding: 100px;
+}
+
+.services h2 {
+    color: var(--dark-blue-2, #005da9);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.services .card-services {
+    padding: 5px;
+    border-radius: 20px;
+    background: #fff;
+    border: 0;
+}
+
+.card-services img {
+    border-radius: 20px;
+    background: #fff;
+}
+
+.card-services h3 {
+    color: #09557f;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-services p {
+    color: var(--main-black, #425466);
+    text-align: center;
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+/* Subscribe section */
+.subscribe {
+    padding: 100px 0;
+}
+
+.subscribe h2 {
+    color: var(--dark-blue-2, #005da9);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.subscribe p {
+    color: var(--main-black, #425466);
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Card package styles */
+
+.card-package {
+    transition: background 0.3s ease, color 0.3s ease;
+    /* Smooth transition for background and text color */
+    -webkit-transition: background 0.3s ease, color 0.3s ease;
+    -moz-transition: background 0.3s ease, color 0.3s ease;
+    -ms-transition: background 0.3s ease, color 0.3s ease;
+    -o-transition: background 0.3s ease, color 0.3s ease;
+}
+
+.card-package .check-list li::before {
+    transition: background-image 0.3s ease;
+    /* Smooth transition for background image */
+    -webkit-transition: background-image 0.3s ease;
+    -moz-transition: background-image 0.3s ease;
+    -ms-transition: background-image 0.3s ease;
+    -o-transition: background-image 0.3s ease;
+}
+
+.card-package {
+    border-radius: 40px;
+    border: 2px solid var(--dark-blue-2, #005da9);
+    background: #fff;
+    padding: 95px 45px 45px 45px;
+}
+
+.card-package h4 {
+    color: var(--dark-blue-2, #005da9);
+    font-family: "Noto Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 48px;
+    /* 120% */
+    letter-spacing: 0.8px;
+    margin-bottom: 0;
+}
+
+.card-package h3 {
+    color: var(--dark-blue-2, #005da9);
+    font-family: Poppins;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 76.8px;
+    /* 120% */
+    letter-spacing: 0.8px;
+    margin-bottom: 30px;
+}
+
+.card-package p {
+    color: var(--dark-blue-2, #005da9);
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 120% */
+    letter-spacing: 0.8px;
+}
+
+.card-package sup {
+    color: var(--dark-blue-2, #005da9);
+    font-family: "Noto Sans";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14.4px;
+    /* 120% */
+    letter-spacing: 0.8px;
+}
+
+.card-package .price p {
+    color: var(--dark-blue-2, #005da9);
+    font-family: "Noto Sans";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 38.4px;
+    /* 120% */
+    letter-spacing: 0.8px;
+}
+
+.card-package:hover,
+.card-package.selected {
+    cursor: pointer;
+    background: var(--dark-blue-2, #005da9);
+}
+
+.card-package:hover h3,
+.card-package:hover h4,
+.card-package:hover p,
+.card-package:hover sup,
+.card-package.selected h3,
+.card-package.selected h4,
+.card-package.selected p,
+.card-package.selected sup {
+    color: white;
+}
+
+.card-package:hover .check-list li::before,
+.card-package.selected .check-list li::before {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M6 11.1L9.71231 14.8123L17.1361 7.3877" stroke="%23FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    /* Insert SVG data */
+}
+
+.card-package:hover .btn-main,
+.card-package.selected .btn-main {
+    background-color: white;
+    color: var(--primary-blue);
+    border: 1px solid var(--primary-blue);
+}
+
+.check-list {
+    list-style: none;
+    /* Remove default list styles */
+    margin-bottom: 125px;
+    padding: 0;
+}
+
+.check-list li {
+    position: relative;
+    /* Set position to relative for absolute positioning of SVG */
+    padding-left: 30px;
+    /* Adjust the left padding to accommodate the SVG icon */
+}
+
+.check-list li::before {
+    content: "";
+    /* Required for pseudo-elements */
+    position: absolute;
+    /* Position the SVG absolutely */
+    left: 0;
+    /* Position the SVG at the beginning of the list item */
+    top: 50%;
+    /* Align the SVG vertically */
+    transform: translateY(-50%);
+    /* Adjust vertical alignment */
+    width: 22px;
+    /* Set width of the SVG */
+    height: 22px;
+    /* Set height of the SVG */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none"><path d="M6 11.1L9.71231 14.8123L17.1361 7.3877" stroke="%23005DA9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
+    /* Insert SVG data */
+    background-repeat: no-repeat;
+    /* Prevent repetition of SVG */
+    background-size: contain;
+    /* Ensure SVG fits within the specified dimensions */
+    margin-right: 5px;
+    /* Add some spacing between the SVG and the list item text */
+}
+
+.amc-for-business {
+    padding: 50px 0;
+    background: #eaf6f9;
+}
+
+.info-container {
+    top: 0;
+    height: 100%;
+    align-items: center;
+    position: absolute;
+}
+
+.card-amc-business {
+    border: 0;
+    padding: 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.amc-busines-label {
+    border-radius: 5px;
+    background: var(--blue, #289dbe);
+    color: #fff;
+    font-family: Poppins;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: fit-content;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+}
+
+.amc-for-business h2 {
+    color: var(--dark-blue-2, #005da9);
+    font-family: Poppins;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.amc-for-business p {
+    color: var(--main-black, #425466);
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 20px;
+}
+
+.amc-for-business h4 {
+    color: var(--main-black, #425466);
+    font-family: "Noto Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Footer styles */
+footer {
+    background: #09557f;
+}
+
+.footer {
+    padding: 50px 0 30px 0;
+}
+
+footer img {
+    width: 172px;
+}
+
+footer h3 {
+    color: #fff;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+footer a {
+    color: #fff;
+    font-family: "Noto Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+    margin-bottom: 10px;
+}

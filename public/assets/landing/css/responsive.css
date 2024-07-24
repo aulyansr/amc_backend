@@ -1,0 +1,74 @@
+@media (min-width: 1900px) {
+    .mobile-screen {
+        max-width: 30rem;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .mobile-screen {
+        max-width: 30rem;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 1399.98px) and (orientation: portrait) {}
+
+@media only screen and (max-width: 1399.98px) {
+    .mobile-screen {
+        max-width: 30rem;
+        margin: auto;
+
+    }
+}
+
+@media only screen and (max-width: 991.98px) {}
+
+@media only screen and (max-width: 767.98px) {}
+
+@media only screen and (max-width: 575.98px) {
+    h1 {
+        font-size: 28px !important;
+        line-height: normal;
+    }
+
+    h2 {
+        font-size: 26px !important;
+        line-height: normal;
+    }
+
+    h3 {
+        font-size: 18px !important;
+    }
+
+    h4 {
+        font-size: 16px !important;
+    }
+
+    p {
+        font-size: 13px;
+    }
+
+    .sidebar {
+        display: none;
+
+    }
+
+    .content-page {
+        margin: 0;
+        padding-top: 20px;
+    }
+
+    #service-list {
+        padding: 20px 0;
+    }
+
+    #service-list h2 {
+        margin-bottom: 40px;
+    }
+
+    .hero-index {
+        background-image: url('/assets/landing/images/bghero-mobile.png');
+    }
+
+}

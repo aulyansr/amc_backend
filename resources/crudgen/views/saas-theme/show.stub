@@ -1,0 +1,11 @@
+@extends('DummyExtends')
+@section('title','')
+@section('DummySection')
+
+	<table class="table table-borderless">
+        <tr>
+            DummyIndexTable
+        </tr>
+    </table>
+
+@endsection
